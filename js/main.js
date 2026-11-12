@@ -12,8 +12,10 @@ themeToggleBtn.addEventListener('click', function () {
 
 let container = document.getElementById('myImage');
 
-container.style.height = 'auto';
-container.style.border = 'none';
-container.style.backgroundColor = 'transparent';
-container.style.padding = '0';
-container.innerHTML = '<img src="./assets/image/krolik.jpg" style="width: 100%; height: auto; border-radius: 8px; display: block;">';
+if (container) {
+    container.style.height = 'auto';
+    container.style.border = 'none';
+    container.style.backgroundColor = 'transparent';
+    container.style.padding = '0';
+    container.innerHTML = '<img src="./assets/image/krolik.jpg" style="width: 100%; height: auto; border-radius: 8px; display: block;">';
+}
