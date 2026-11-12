@@ -178,7 +178,7 @@ a {
     border-radius: 8px;
     color: #625D7D;
     font-style: italic;
-    border: 2px dashed #a397c4;
+    border: 2px solid #a397c4;
 }
 
 .large-placeholder {

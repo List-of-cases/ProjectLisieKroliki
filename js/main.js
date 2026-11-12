@@ -9,5 +9,10 @@ themeToggleBtn.addEventListener('click', function () {
         themeToggleBtn.textContent = 'Сонце';
     }
 });
+
 let imgElement = document.getElementById('myImage');
-imgElement.src = './assets/image/Gemini_Generated_Image_pzlfispzlfispzlf.jpg';
+
+imgElement.src = './assets/image/krolik.jpg';
+imgElement.style.maxWidth = '100%';
+imgElement.style.maxHeight = '100%';
+imgElement.style.objectFit = 'contain';
