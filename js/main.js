@@ -10,9 +10,10 @@ themeToggleBtn.addEventListener('click', function () {
     }
 });
 
-let imgElement = document.getElementById('myImage');
+let container = document.getElementById('myImage');
 
-imgElement.src = './assets/image/krolik.jpg';
-imgElement.style.maxWidth = '100%';
-imgElement.style.maxHeight = '100%';
-imgElement.style.objectFit = 'contain';
+container.style.height = 'auto';
+container.style.border = 'none';
+container.style.backgroundColor = 'transparent';
+container.style.padding = '0';
+container.innerHTML = '<img src="./assets/image/krolik.jpg" style="width: 100%; height: auto; border-radius: 8px; display: block;">';
