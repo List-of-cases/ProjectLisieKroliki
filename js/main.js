@@ -9,3 +9,5 @@ themeToggleBtn.addEventListener('click', function () {
         themeToggleBtn.textContent = 'Сонце';
     }
 });
+let imgElement = document.getElementById('myImage');
+imgElement.src = './assets/image/Gemini_Generated_Image_pzlfispzlfispzlf.jpg';
