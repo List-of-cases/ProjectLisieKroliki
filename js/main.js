@@ -25,3 +25,4 @@ setCardImage('myImage', './assets/image/krolik.jpg', 'Зайчик у соціа
 setCardImage('goodImage', './assets/image/good.jpg', 'Плюси соціальних мереж');
 setCardImage('badImage', './assets/image/bad.jpg', 'Небезпека соціальних мереж');
 setCardImage('scrollPhone', './assets/image/scroll.jpg', 'Ефект нескінченної стрічки');
+setCardImage('logo', './assets/image/лого.png', 'BunnyLog');
