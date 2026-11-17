@@ -96,6 +96,7 @@ a {
     margin-bottom: 10px;
     border-bottom: 2px solid #A397C4;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .sidebar-nav {
@@ -136,7 +137,7 @@ a {
 }
 
 .text-inner-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 10px;
 }
 
@@ -144,7 +145,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .section-card {
@@ -153,6 +154,9 @@ a {
     padding: 25px;
     border-radius: 8px;
     color: #242432;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-type-1 {
@@ -165,7 +169,7 @@ a {
 
 .image-placeholder-wrapper {
     width: 100%;
-    margin: 20px 0;
+    margin: 15px 0 0 0;
 }
 
 .image-placeholder {
@@ -181,8 +185,20 @@ a {
     border: 2px solid #a397c4;
 }
 
-.large-placeholder {
-    height: 500px;
+.next-page-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #625D7D;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.next-page-link:hover {
+    background-color: #A397C4;
+    color: #242432;
 }
 
 .theme-toggle-btn {
@@ -254,7 +270,8 @@ body.dark-theme .sidebar-title {
     color: #EAE7F0;
 }
 
-body.dark-theme .theme-toggle-btn {
+body.dark-theme .theme-toggle-btn,
+body.dark-theme .next-page-link {
     background-color: #82799F;
     color: #171720;
 }
@@ -270,6 +287,13 @@ body.dark-theme .card-type-1 {
 
 body.dark-theme .card-type-2 {
     background-color: #8FB6A7;
+    color: #171720;
+}
+
+body.dark-theme .card-type-1 p,
+body.dark-theme .card-type-1 h3,
+body.dark-theme .card-type-2 p,
+body.dark-theme .card-type-2 h3 {
     color: #171720;
 }
 
