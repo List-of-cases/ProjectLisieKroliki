@@ -424,8 +424,41 @@ body.dark-theme .card-type-2 h3 {
 
 body.dark-theme .image-placeholder {
     background-color: #2a2a38;
-    border-color: #343344;
+    border-color: #343343;
 }
+.split-block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.split-text {
+    flex: 1.2; 
+}
+
+.split-image {
+    flex: 1;
+}
+
+.step-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.step-image {
+    width: 240px; 
+    flex-shrink: 0;
+}
+
+.step-text {
+    flex: 1;
+}
+
 
 @media (max-width: 768px) {
     .top-nav-wrapper {

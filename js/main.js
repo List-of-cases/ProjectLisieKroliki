@@ -30,7 +30,6 @@ setCardImage('scrollPhone', './assets/image/scroll.jpg', 'Ефект нескі�
 setCardImage('pic1', './assets/image/4.jpg', 'Пастка чужих успіхів');
 setCardImage('pic2', './assets/image/5.jpg', 'Синдром FOMO');
 
-// Отдельная вставка для логотипа, чтобы сохранить его размер 38x38px
 const logoContainer = document.getElementById('logo');
 if (logoContainer) {
     logoContainer.innerHTML = '<img src="./assets/image/лого.png" alt="BunnyLog" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px; display: block;">';
@@ -83,3 +82,7 @@ if (burgerBtn && menuTemplate) {
         }
     });
 }
+setCardImage('phantomPic', './assets/image/6.jpg', 'Фантомні вібрації');
+setCardImage('hygienePic', './assets/image/7.jpg', 'Цифрова гігієна');
+setCardImage('timePic', './assets/image/8.png', 'Контроль часу');
+setCardImage('eveningPic', './assets/image/9.jpg', 'Вечори без екранів');
