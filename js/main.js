@@ -26,3 +26,49 @@ setCardImage('goodImage', './assets/image/good.jpg', 'Плюси соціаль�
 setCardImage('badImage', './assets/image/bad.jpg', 'Небезпека соціальних мереж');
 setCardImage('scrollPhone', './assets/image/scroll.jpg', 'Ефект нескінченної стрічки');
 setCardImage('logo', './assets/image/лого.png', 'BunnyLog');
+
+const burgerBtn = document.getElementById('burgerBtn');
+const menuTemplate = document.getElementById('mobileMenuTemplate');
+
+function openMenu() {
+    if (document.getElementById('mobileMenu')) return;
+
+    const clone = menuTemplate.content.cloneNode(true);
+
+    const closeBtn = clone.querySelector('#closeBtn');
+    closeBtn.addEventListener('click', closeMenu);
+
+    const links = clone.querySelectorAll('.mobile-nav a');
+    links.forEach(link => link.addEventListener('click', closeMenu));
+
+    document.body.appendChild(clone);
+}
+
+function closeMenu() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenu) {
+        mobileMenu.remove();
+    }
+}
+
+if (burgerBtn && menuTemplate) {
+    burgerBtn.addEventListener('click', openMenu);
+
+    document.addEventListener('click', (event) => {
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (
+            mobileMenu &&
+            !mobileMenu.contains(event.target) &&
+            !burgerBtn.contains(event.target)
+        ) {
+            closeMenu();
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
+}

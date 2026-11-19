@@ -19,16 +19,37 @@
 
 <body>
 
-    <div class="top-nav-wrapper">
+    <header class="top-nav-wrapper">
         <a href="./index.html" class="nav-brand-wrapper">
             <div class="nav-logo" id="logo"></div>
             <span class="nav-brand-name">BunnyLog</span>
         </a>
-        <a href="./index.html">Головна</a>
-        <a href="./page1.html">Емоції та FOMO</a>
-        <a href="./page2.html">Цифровий баланс</a>
-        <a href="./sources.html">Джерела</a>
-    </div>
+
+        <div class="nav-links-wrapper">
+            <a href="./index.html">Головна</a>
+            <a href="./page1.html">Емоції та FOMO</a>
+            <a href="./page2.html">Цифровий баланс</a>
+            <a href="./sources.html">Джерела</a>
+        </div>
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Відкрити меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <template id="mobileMenuTemplate">
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-btn" id="closeBtn" aria-label="Закрити меню">✕</button>
+            <nav class="mobile-nav">
+                <a href="./index.html">Головна</a>
+                <a href="./page1.html">Емоції та FOMO</a>
+                <a href="./page2.html">Цифровий баланс</a>
+                <a href="./sources.html">Джерела</a>
+            </nav>
+        </div>
+    </template>
 
     <div class="page-layout-wrapper">
         <aside class="sidebar-wrapper">

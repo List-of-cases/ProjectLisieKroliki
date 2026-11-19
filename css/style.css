@@ -43,7 +43,7 @@ a {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
@@ -103,6 +103,64 @@ a {
 .nav-links-wrapper a:hover {
     color: #A397C4;
     text-decoration: none;
+}
+
+.burger-btn {
+    display: none;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    color: #242432;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.close-btn {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: #242432;
+    font-size: 26px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 0;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #A397C4;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile-nav a {
+    color: #242432;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 12px;
+    border-radius: 6px;
+    transition: color 0.3s, background-color 0.2s;
+}
+
+.mobile-nav a:hover {
+    color: #A397C4;
+    background-color: #E8E5EF;
 }
 
 .page-layout-wrapper {
@@ -307,6 +365,23 @@ body.dark-theme .nav-links-wrapper a:hover {
     text-decoration: none;
 }
 
+body.dark-theme .mobile-menu {
+    background-color: #22222F;
+    color: #EAE7F0;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-theme .close-btn,
+body.dark-theme .mobile-nav a {
+    color: #EAE7F0;
+}
+
+body.dark-theme .close-btn:hover,
+body.dark-theme .mobile-nav a:hover {
+    color: #A397C4;
+    background-color: #171720;
+}
+
 body.dark-theme .sidebar-nav a {
     color: #EAE7F0;
 }
@@ -354,12 +429,36 @@ body.dark-theme .image-placeholder {
 
 @media (max-width: 768px) {
     .top-nav-wrapper {
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .nav-links-wrapper {
-        justify-content: center;
-        gap: 15px;
+        display: none;
+    }
+
+    .burger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .burger-btn span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #242432;
+        border-radius: 2px;
+        transition: background-color 0.3s;
+    }
+
+    body.dark-theme .burger-btn span {
+        background-color: #EAE7F0;
     }
 
     .page-layout-wrapper {
