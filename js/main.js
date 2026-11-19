@@ -28,3 +28,8 @@ setCardImage('scrollPhone', './assets/image/scroll.jpg', 'Ефект нескі�
 setCardImage('logo', './assets/image/лого.png', 'BunnyLog');
 setCardImage('pic1', './assets/image/4.jpg', 'Пастка чужих успіхів');
 setCardImage('pic2', './assets/image/5.jpg', 'Синдром FOMO');
+
+setCardImage('phantomPic', './assets/image/6.jpg', 'Фантомні вібрації');
+setCardImage('hygienePic', './assets/image/7.jpg', 'Цифрова гігієна');
+setCardImage('timePic', './assets/image/8.png', 'Контроль часу');
+setCardImage('eveningPic', './assets/image/9.jpg', 'Вечори без екранів');
