@@ -26,3 +26,5 @@ setCardImage('goodImage', './assets/image/good.jpg', 'Плюси соціаль�
 setCardImage('badImage', './assets/image/bad.jpg', 'Небезпека соціальних мереж');
 setCardImage('scrollPhone', './assets/image/scroll.jpg', 'Ефект нескінченної стрічки');
 setCardImage('logo', './assets/image/лого.png', 'BunnyLog');
+setCardImage('pic1', './assets/image/4.jpg', 'Пастка чужих успіхів');
+setCardImage('pic2', './assets/image/5.jpg', 'Синдром FOMO');
