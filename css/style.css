@@ -385,35 +385,6 @@ body.dark-theme .image-placeholder {
 }
 
 
-
-
-
-.split-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.split-section.reverse {
-    flex-direction: column-reverse;
-}
-
-.split-text,
-.split-media {
-    width: 100%;
-}
-
-.split-media .image-placeholder {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    min-height: 380px;
-}
-
-
-
-
-
 @media (max-width: 768px) {
     .top-nav-wrapper {
         justify-content: center;
