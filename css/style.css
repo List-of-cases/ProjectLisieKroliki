@@ -383,7 +383,38 @@ body.dark-theme .image-placeholder {
 .step-text {
     flex: 1;
 }
+.split-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
+.split-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.split-text {
+    flex: 1.2;
+}
+
+.split-media {
+    flex: 1;
+}
+
+.split-media .image-placeholder {
+    height: 300px;
+}
+
+@media (max-width: 900px) {
+    .split-section,
+    .split-section.reverse {
+        flex-direction: column;
+    }
+
+    .split-media {
+        width: 100%;
+    }
+}
 @media (max-width: 768px) {
     .top-nav-wrapper {
         justify-content: center;
