@@ -87,3 +87,9 @@ setCardImage('hygienePic', './assets/image/7.jpg', 'Цифрова гігієн�
 setCardImage('timePic', './assets/image/8.png', 'Контроль часу');
 setCardImage('eveningPic', './assets/image/9.jpg', 'Вечори без екранів');
 setCardImage('colgatecat', './assets/image/colgate.png', 'Вечори без екранів');
+
+
+const bottomBunny = document.getElementById('bottomBunny');
+if (bottomBunny) {
+    bottomBunny.innerHTML = '<img src="./assets/gif/заєць1.gif" alt="Піксельний зайчик" style="width: 140px; height: auto; image-rendering: pixelated; display: block;">';
+}
