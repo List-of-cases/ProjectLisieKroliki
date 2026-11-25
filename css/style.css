@@ -5,7 +5,9 @@ html {
 
 body {
     background-color: #E8E5EF;
-    color: #242432;
+    background-image: linear-gradient(135deg, #e19fe3 0%, #9bbee4 100%);
+    background-attachment: fixed;
+    color: #000000;
     font-family: 'Chiron GoRound TC', sans-serif;
     margin: 0;
     padding: 0;
@@ -86,7 +88,7 @@ a {
 
 .nav-links-wrapper a {
     text-decoration: none;
-    color: #242432;
+    color: #070608;
     font-weight: bold;
     font-size: 18px;
 }
@@ -369,6 +371,8 @@ body.dark-theme .page-layout-wrapper::before {
 
 body.dark-theme {
     background-color: #171720;
+    background-image: linear-gradient(135deg, #182322 0%, #191E2B 100%);
+    background-attachment: fixed;
     color: #EAE7F0;
 }
 
