@@ -92,3 +92,47 @@ const bottomBunny = document.getElementById('bottomBunny');
 if (bottomBunny) {
     bottomBunny.innerHTML = '<img src="./assets/gif/заєць1.gif" alt="Піксельний зайчик" style="width: 140px; height: auto; image-rendering: pixelated; display: block;">';
 }
+
+
+
+// === ЧАРІВНИЙ СЛІД З КУРСОРА (ЗІРОЧКИ ТА КРОЛИКИ) ===
+let lastSpawnTime = 0; // Запам'ятовуємо час останньої зірочки
+
+document.addEventListener('mousemove', function (e) {
+    const now = Date.now();
+    
+    // Якщо пройшло менше 150 мілісекунд — нічого не створюємо (щоб сипалось не часто)
+    if (now - lastSpawnTime < 150) return;
+    lastSpawnTime = now;
+
+    // Створюємо елемент частинки
+    const particle = document.createElement('span');
+    
+    // Вибираємо випадковий символ (зірочки трапляються частіше, кролик — рідше)
+    const icons = ['✦', '✨', '⋆', '🐰'];
+    particle.textContent = icons[Math.floor(Math.random() * icons.length)];
+
+    // Налаштовуємо вигляд і позицію прямо під курсором
+    particle.style.position = 'fixed';
+    particle.style.left = (e.clientX + 5) + 'px';
+    particle.style.top = (e.clientY + 5) + 'px';
+    particle.style.fontSize = '16px';
+    particle.style.color = '#A397C4'; // Лавандовий колір під стиль сайту
+    particle.style.pointerEvents = 'none'; // Щоб не заважало натискати на кнопки
+    particle.style.zIndex = '9999';
+    particle.style.transition = 'transform 0.9s ease-out, opacity 0.9s ease-out';
+
+    document.body.appendChild(particle);
+
+    // Запускаємо плавне падіння вниз і зникнення
+    setTimeout(function () {
+        const randomX = (Math.random() - 0.5) * 30; // Трохи розлітаються вбік
+        particle.style.transform = `translate(${randomX}px, 35px) scale(0.5)`;
+        particle.style.opacity = '0';
+    }, 20);
+
+    // Видаляємо елемент зі сторінки через 0.9 секунди, щоб не засмічувати пам'ять
+    setTimeout(function () {
+        particle.remove();
+    }, 900);
+});
