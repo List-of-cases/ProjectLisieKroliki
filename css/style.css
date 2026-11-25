@@ -492,3 +492,37 @@ body.dark-theme .image-placeholder {
         top: 0;
     }
 }
+
+.split-block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.split-text {
+    flex: 1.2;
+}
+
+.split-image {
+    flex: 1;
+}
+
+/* Карточки шагов в шахматном порядке */
+.step-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px; /* Отступ между карточками, чтобы не слипались */
+}
+
+.step-image {
+    width: 240px;
+    flex-shrink: 0;
+}
+
+.step-text {
+    flex: 1;
+}
