@@ -87,31 +87,5 @@ setCardImage('hygienePic', './assets/image/7.jpg', 'Цифрова гігієн�
 setCardImage('timePic', './assets/image/8.png', 'Контроль часу');
 setCardImage('eveningPic', './assets/image/9.jpg', 'Вечори без екранів');
 
-// === ЖИВИЙ ПАТЕРН НА ФОНІ ===
-const bgPattern = document.createElement('div');
-
-bgPattern.style.position = 'fixed';
-bgPattern.style.top = '0';
-bgPattern.style.left = '0';
-bgPattern.style.width = '100%';
-bgPattern.style.height = '100%';
-bgPattern.style.zIndex = '-1'; 
-bgPattern.style.pointerEvents = 'none'; 
-
-bgPattern.style.backgroundImage = "url('./assets/gif/bunny-pattern.gif')";
-bgPattern.style.backgroundRepeat = 'repeat';
-bgPattern.style.backgroundSize = '260px 260px'; 
-bgPattern.style.imageRendering = 'pixelated'; 
-bgPattern.style.opacity = '0.6'; 
-
-document.body.appendChild(bgPattern);
-let x = 0;
-let y = 0;
-
-setInterval(function () {
-    x += 0.4; // Швидкість вправо
-    y += 0.4; // Швидкість вниз
-    bgPattern.style.backgroundPosition = x + 'px ' + y + 'px';
-}, 30);
 
 
