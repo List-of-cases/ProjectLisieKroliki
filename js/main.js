@@ -87,7 +87,7 @@ setCardImage('hygienePic', './assets/image/7.jpg', 'Цифрова гігієн�
 setCardImage('timePic', './assets/image/8.png', 'Контроль часу');
 setCardImage('eveningPic', './assets/image/9.jpg', 'Вечори без екранів');
 
-// === ЖИВИЙ ПАТЕРН НА ФОНІ ===
+//pattern
 const bgPattern = document.createElement('div');
 
 bgPattern.style.position = 'fixed';
@@ -109,8 +109,8 @@ let x = 0;
 let y = 0;
 
 setInterval(function () {
-    x += 0.4; // Швидкість вправо
-    y += 0.4; // Швидкість вниз
+    x += 0.4;
+    y += 0.4;
     bgPattern.style.backgroundPosition = x + 'px ' + y + 'px';
 }, 30);
 
