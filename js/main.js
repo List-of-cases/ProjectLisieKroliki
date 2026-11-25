@@ -86,3 +86,4 @@ setCardImage('phantomPic', './assets/image/6.jpg', 'Фантомні вібра�
 setCardImage('hygienePic', './assets/image/7.jpg', 'Цифрова гігієна');
 setCardImage('timePic', './assets/image/8.png', 'Контроль часу');
 setCardImage('eveningPic', './assets/image/9.jpg', 'Вечори без екранів');
+setCardImage('colgatecat', './assets/image/colgate.png', 'Вечори без екранів');
