@@ -19,24 +19,104 @@
 
 <body>
 
-    <div class="top-nav-wrapper">
+    <header class="top-nav-wrapper">
         <a href="./index.html" class="nav-brand-wrapper">
             <div class="nav-logo" id="logo"></div>
             <span class="nav-brand-name">Bunnynet</span>
         </a>
-        <a href="./index.html">Головна</a>
-        <a href="./page1.html">Емоції та FOMO</a>
-        <a href="./page2.html">Цифровий баланс</a>
-        <a href="./sources.html">Джерела</a>
-    </div>
+
+        <div class="nav-links-wrapper">
+            <a href="./index.html">Головна</a>
+            <a href="./page1.html">Емоції та FOMO</a>
+            <a href="./page2.html">Цифровий баланс</a>
+            <a href="./sources.html">Джерела</a>
+        </div>
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Відкрити меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <template id="mobileMenuTemplate">
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-btn" id="closeBtn" aria-label="Закрити меню">✕</button>
+            <nav class="mobile-nav">
+                <a href="./index.html">Головна</a>
+                <a href="./page1.html">Емоції та FOMO</a>
+                <a href="./page2.html">Цифровий баланс</a>
+                <a href="./sources.html">Джерела</a>
+            </nav>
+        </div>
+    </template>
 
     <div class="page-layout-wrapper">
         <aside class="sidebar-wrapper">
+            <div class="sidebar-title">Зміст сторінки</div>
+            <nav class="sidebar-nav">
+                <a href="#sources-intro">Використані джерела</a>
+                <a href="#source-1">1. APA</a>
+                <a href="#source-2">2. Cyberpsychology</a>
+                <a href="#source-3">3. Common Sense Media</a>
+            </nav>
+
             <button class="theme-toggle-btn" id="themeToggle">Місяць / Сонце</button>
         </aside>
 
+        <div class="content-wrapper">
 
-        <script src="./js/main.js"></script>
+            <div class="main-card-wrapper">
+                <main class="main-card">
+
+                    <div id="sources-intro" class="text-inner-wrapper text-header-section">
+                        <h1>Використані джерела</h1>
+                        <p>Матеріали, наукові публікації та аналітичні дослідження, на які спиралася наша команда
+                            під час створення проєкту <strong>Bunnynet</strong>.</p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="cards-grid-wrapper" style="flex-direction: column;">
+                        <div id="source-1" class="section-card card-type-1">
+                            <h3>1. American Psychological Association (APA)</h3>
+                            <p>Масштабні дослідження впливу соціальних мереж на ментальне здоров'я підлітків та
+                                молоді.</p>
+                        </div>
+
+                        <div id="source-2" class="section-card card-type-2">
+                            <h3>2. Cyberpsychology, Behavior, and Social Networking</h3>
+                            <p>Наукові статті про нейробіологічні механізми формування дофамінової залежності від
+                                гаджетів.</p>
+                        </div>
+
+                        <div id="source-3" class="section-card card-type-1">
+                            <h3>3. Common Sense Media</h3>
+                            <p>Аналітичні матеріали про вплив соцмереж на самооцінку, бодіпозитив та розвиток
+                                цифрової грамотності серед нового покоління.</p>
+                        </div>
+
+                        <!-- Якщо захочете додати ще джерела замість пропущених пунктів, просто скопіюйте один із блоків вище -->
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="text-inner-wrapper">
+                        <p><a href="./index.html" class="next-page-link">← Повернутися на головну</a></p>
+                    </div>
+
+                </main>
+            </div>
+
+            <footer class="main-footer-wrapper">
+                <p>BunnyLog — проєкт створено в межах навчального закладу.</p>
+                <p><small>© 2026 Всі права захищені.</small></p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
