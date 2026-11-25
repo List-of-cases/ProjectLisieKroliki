@@ -86,6 +86,7 @@ setCardImage('phantomPic', './assets/image/6.jpg', 'Фантомні вібра�
 setCardImage('hygienePic', './assets/image/7.jpg', 'Цифрова гігієна');
 setCardImage('timePic', './assets/image/8.png', 'Контроль часу');
 setCardImage('eveningPic', './assets/image/9.jpg', 'Вечори без екранів');
+setCardImage('colgatecat', './assets/image/colgate.png', 'Вечори без екранів');
 
 
 const bottomBunny = document.getElementById('bottomBunny');
@@ -95,8 +96,8 @@ if (bottomBunny) {
 
 
 
-// === ЧАРІВНИЙ СЛІД З КУРСОРА (ЗІРОЧКИ ТА КРОЛИКИ) ===
-let lastSpawnTime = 0; // Запам'ятовуємо час останньої зірочки
+
+let lastSpawnTime = 0; 
 
 document.addEventListener('mousemove', function (e) {
     const now = Date.now();
